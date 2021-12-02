@@ -29,20 +29,20 @@ const Create = () => {
     <div className="create">
       <h2>新增神奇寶貝</h2>
       <form onSubmit={handleSubmit}>
-        <label>Blog title:</label>
+        <label>神奇寶貝名稱:</label>
         <input
           type="text"
           required
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <label>Blog body:</label>
+        <label>神奇寶貝說明:</label>
         <textarea
           required
           value={body}
           onChange={(e) => setBody(e.target.value)}
         ></textarea>
-        <label>Blog 作者:</label>
+        <label>發現人:</label>
         <select value={author} onChange={(e) => setAuthor(e.target.value)}>
           <option value="小智">小智</option>
           <option value="小霞">小霞</option>
